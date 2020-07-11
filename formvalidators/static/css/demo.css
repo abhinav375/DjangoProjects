@@ -1,0 +1,23 @@
+body{
+background:rgb(94, 196, 111);
+color:rgb(197, 149, 130);
+    
+}
+h1{
+
+    color:rgb(20, 23, 34);
+}
+table{
+
+height:300px;
+width: 400px;
+margin: auto;
+float: left;
+
+}
+tr,td{
+
+    height:300px;
+    width: 400px;
+
+}

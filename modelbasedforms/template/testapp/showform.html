@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="{% static "css/demo.css" %}" rel="stylesheet">
+    </head>
+    <body>
+    {% if model %}
+    <table border="2px">
+        <thead>
+            <th>Name</th>
+            <th>rollno</th>
+            <th>address</th>
+        </thead>
+        {% for forms in model %}
+        <tr>
+            <td>{{forms.name}}</td>
+            <td>{{forms.roll_no}}</td>
+            <td>{{forms.address}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    {% else %}
+    <p>No data found</p>
+    {% endif %}
+    </body>
+</html>

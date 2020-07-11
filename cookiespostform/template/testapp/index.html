@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="{% static "css/demo.css" %}" rel="stylesheet">
+    </head>
+    <body>
+   {% if request.COOKIES %}
+    {% for key,value in request.COOKIES.items %}
+    <h1>{{key}}</h1>
+    <h1>{{value}}</h1>
+    {% endfor %}
+{% else %}
+<h1>No data found</h1>
+{% endif %}
+  
+ <!-- Session code {% if request.session %}
+    {% for key,value in request.session.items %}
+    <h1>{{key}}</h1>
+    <h1>{{value}}</h1>
+    {% endfor %}
+{% else %}
+<h1>No data found</h1>
+{% endif %}
+ -->
+    </body>
+</html>

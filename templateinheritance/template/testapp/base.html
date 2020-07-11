@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="{% static "css/demo.css" %}" rel="stylesheet">
+        {% block change_css %}
+        {% endblock %}
+    </head>
+    <body>
+    <h1>Welcome to Abhinav Shukla Base Project</h1>
+    <a href="/sports">click here to go to sports complex</a>
+    {% block testbody %}
+    {% endblock %}
+    </body>
+</html>

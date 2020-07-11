@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+{% extends "testapp/base.html" %}
+{% load static %}
+{% block change_css %}
+<link href="{% static "css/demo1.css" %}" rel="stylesheet">
+{% endblock %}
+{% block testbody %}
+<h1>Welcome to Sports complex</h1>
+{% endblock %}

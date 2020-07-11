@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% load myfilters %}
+{% load static %}
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+    {% if inf %}
+    <table>
+    
+        <thead>
+            <th>Name</th>
+            <th>Roll_no</th>
+            <th>address</th>
+    
+        </thead>
+        {% for x in inf %}
+    <tr>
+    <td>{{x.name|trunc:2}}</td>
+    <td>{{x.roll_no|add:12}}</td>
+    <td>{{x.address|title}}</td>
+    </tr>
+    {% endfor %}
+    </table>
+    {% else %}
+    <p>No rows found</p>
+    {% endif %}
+    </body>
+</html>

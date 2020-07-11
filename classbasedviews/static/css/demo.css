@@ -1,0 +1,38 @@
+body{
+background: rgb(95, 16, 91);
+color:yellowgreen;
+    
+}
+h1{
+
+    color:rgb(26, 44, 28);
+    margin: auto;
+    text-align: center;
+    padding: 4px;
+}
+span{
+
+color: red;
+
+}
+.container
+{
+text-align: center;
+display:block;
+
+}
+.table1
+{
+border: 2px;
+border-color:black;
+margin: 2px;
+padding: 20px;
+margin: auto;
+
+}
+tr,td{
+
+    margin: 2px;
+    padding: 2px;
+
+}

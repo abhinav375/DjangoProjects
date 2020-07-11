@@ -1,0 +1,22 @@
+body{
+background:rgb(73, 44, 49);
+color:rgb(233, 235, 243);
+    
+}
+h1{
+
+    color:rgb(82, 173, 64);
+}
+table{
+
+  width: 100%;
+  height: auto;
+  line-height: 2px;
+}
+th, td { 
+  width:150px; 
+  text-align:center; 
+  border:1px solid black; 
+  padding:5px 
+
+} 

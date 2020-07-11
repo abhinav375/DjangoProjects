@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="{% static "css/demo.css" %}" rel="stylesheet">
+    </head>
+    <body>
+    <h1 id="hero"> Welcome to Beer WORLD</h1>
+    {% if beer_list %}
+    <table border="2px" class="table1">
+<thead></thead>
+{% for beer in beer_list %}
+<tr>
+<td>{{beer.name}}</td>
+<td><a href="/details/{{beer.id}}">Details</a></td>
+<td><a href="/update/{{beer.id}}">Update</a></td>
+<td><a href="/delete/{{beer.id}}">Delete</a></td>
+</tr>
+{% endfor %}
+    </table>
+    {% else %}
+    <p>NO data found</p>
+    {% endif %}
+<div class='container'>
+    <a href="/create/{{beer.id}}">Click here to insert a record</a>
+</div>
+    </body>
+</html>

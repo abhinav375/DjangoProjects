@@ -1,0 +1,24 @@
+body{
+background: rgb(231, 234, 238);
+color:yellowgreen;
+    
+}
+h1{
+
+    color:rgb(26, 44, 28);
+}
+span{
+
+color: red;
+
+}
+.container
+{
+float: left;
+margin-right: 2px;
+margin-left: 2px;
+padding-right: 2px;
+padding-left: 2px;
+
+
+}

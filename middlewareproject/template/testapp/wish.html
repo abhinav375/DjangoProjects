@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="{% static "css/demo.css" %}" rel="stylesheet">
+</head>
+
+<body>
+    <div class='container'>
+
+        <form action='/show'>
+
+            {{form.as_p}}
+
+            {%csrf_token%}
+            <input type="submit" value="submitMarks">
+
+        </form>
+
+
+
+    </div>
+</body>
+
+</html>
